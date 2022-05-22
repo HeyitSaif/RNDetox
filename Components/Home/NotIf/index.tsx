@@ -9,7 +9,10 @@ const MEMBERS = '53 Members ';
 
 function SettingsScreen() {
   return (
-    <ImageBackground style={styleLocal.view} source={BgImage}>
+    <ImageBackground
+      style={styleLocal.view}
+      source={BgImage}
+      testID={'NotIfScreen'}>
       <View style={styles.headingView}>
         <Text style={styles.heading}>World</Text>
         <View style={styleLocal.row}>

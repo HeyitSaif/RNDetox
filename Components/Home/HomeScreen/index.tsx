@@ -9,7 +9,10 @@ const MEMBERS = '53 Members ';
 
 function HomeScreen() {
   return (
-    <ImageBackground style={styleLocal.view} source={BgImage}>
+    <ImageBackground
+      style={styleLocal.view}
+      source={BgImage}
+      testID={'HomeScreen'}>
       <View style={styles.headingView}>
         <Text style={styles.heading}>Hello</Text>
         <View style={styleLocal.row}>

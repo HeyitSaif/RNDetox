@@ -48,11 +48,11 @@ function MyTabBar({state, descriptors, navigation}: TabBarType) {
 
           return (
             <TouchableOpacity
+              testID={`Screen-${label}`}
               key={index}
               accessibilityRole="button"
               accessibilityState={isFocused ? {selected: true} : {}}
               accessibilityLabel={options.tabBarAccessibilityLabel}
-              testID={options.tabBarTestID}
               onPress={onPress}
               onLongPress={onLongPress}
               style={styles.tabView}>

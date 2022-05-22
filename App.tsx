@@ -1,6 +1,5 @@
-import 'react-native-gesture-handler';
 import React from 'react';
-import {ActivityIndicator, SafeAreaView, useColorScheme} from 'react-native';
+import {SafeAreaView, useColorScheme} from 'react-native';
 import Home from './Components/Home';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
@@ -13,9 +12,7 @@ const linking = {
 
 function DefaultStack() {
   return (
-    <NavigationContainer
-      linking={linking}
-      fallback={<ActivityIndicator color="blue" size="large" />}>
+    <NavigationContainer linking={linking}>
       <Home />
     </NavigationContainer>
   );
