@@ -11,9 +11,10 @@ describe('E2E', () => {
     await expect(element(by.text('Hello'))).toBeVisible();
   });
 
-  it('should show hello screen after tap', async () => {
+  it('should show NOTIF screen after tap', async () => {
     await element(by.id('Screen-NOTIF')).tap();
     await expect(element(by.id('NotIfScreen'))).toBeVisible();
     await expect(element(by.text('World'))).toBeVisible();
+    await device.terminateApp();
   });
 });
